@@ -20,7 +20,7 @@ module.exports = {
     new ReactToHtmlPlugin('index.html', 'index.js')
   ]
 
-}
+};
 ```
 
 ### index.js
