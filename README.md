@@ -20,6 +20,9 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: 'dist',
+    /* IMPORTANT!
+     * You must compile to UMD or CommonJS
+     * so it can be required in a Node context: */
     library: 'MyComponent',
     libraryTarget: 'umd'
   },
@@ -41,6 +44,8 @@ if (typeof document !== 'undefined') {
   React.render(MyComponent(), document);
 }
 
+/* IMPORTANT!
+ * You must export a component: */
 module.exports = MyComponent;
 ```
 
