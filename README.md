@@ -6,6 +6,12 @@ Components are rendered after all source files have been compiled, so JSX works 
 
 *Warning! This plugin executes your code in a Node context after each compilation.*
 
+## Install
+
+```bash
+$ npm install --save-dev react-to-html-webpack-plugin
+```
+
 ## Usage Example
 
 ### webpack.config.js
