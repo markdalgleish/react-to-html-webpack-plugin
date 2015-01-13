@@ -13,7 +13,7 @@ ReactToHtmlWebpackPlugin.prototype.apply = function(compiler) {
       var asset = compiler.assets[this.srcPath];
 
       if (asset === undefined) {
-        throw new Error('File not found: "' + this.srcPath + '"');
+        throw new Error('Output file not found: "' + this.srcPath + '"');
       }
 
       var source = asset.source();
