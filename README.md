@@ -1,6 +1,6 @@
 [![npm](https://img.shields.io/npm/v/react-to-html-webpack-plugin.svg?style=flat-square)](https://npmjs.org/package/react-to-html-webpack-plugin) [![Dependency Status](https://img.shields.io/david/markdalgleish/react-to-html-webpack-plugin.svg?style=flat-square)](https://david-dm.org/markdalgleish/react-to-html-webpack-plugin)
 
-# React-To-Html Webpack Plugin
+# React-to-HTML Webpack Plugin
 
 Webpack plugin that renders a React component to an HTML file.
 
