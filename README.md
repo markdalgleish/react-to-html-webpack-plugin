@@ -35,6 +35,12 @@ module.exports = {
     libraryTarget: 'umd'
   },
 
+  module: {
+    loaders: [
+      { test: /\.jsx$/, loader: 'jsx-loader' }
+    ]
+  },
+
   plugins: [
     new ReactToHtmlPlugin('index.html', 'index.js')
   ]
