@@ -2,7 +2,7 @@
 
 # React-to-HTML Webpack Plugin
 
-Webpack plugin that renders a React component to an HTML file.
+Webpack plugin that renders React components to HTML files.
 
 Components are rendered after all source files have been compiled, so JSX works without any issues.
 
