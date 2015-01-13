@@ -1,0 +1,25 @@
+{
+  "name": "react-to-html-webpack-plugin",
+  "version": "1.0.0",
+  "description": "WIP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:markdalgleish/react-to-html-webpack-plugin.git"
+  },
+  "author": {
+    "name": "Mark Dalgleish"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markdalgleish/react-to-html-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/markdalgleish/react-to-html-webpack-plugin",
+  "dependencies": {
+    "eval": "^0.1.0",
+    "lodash.foreach": "^3.0.1"
+  }
+}
