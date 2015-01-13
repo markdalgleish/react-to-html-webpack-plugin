@@ -23,7 +23,7 @@ var ReactToHtmlPlugin = require('react-to-html-webpack-plugin');
 
 module.exports = {
 
-  entry: './src/index.js',
+  entry: './index.jsx',
 
   output: {
     filename: 'index.js',
@@ -31,7 +31,7 @@ module.exports = {
     /* IMPORTANT!
      * You must compile to UMD or CommonJS
      * so it can be required in a Node context: */
-    library: 'MyComponent',
+    library: 'MyComponentExample',
     libraryTarget: 'umd'
   },
 
@@ -42,14 +42,14 @@ module.exports = {
 };
 ```
 
-### index.js
+### index.jsx
 
 ```js
 var React = require('react');
-var MyComponent = React.createFactory(require('./MyComponent.jsx'));
+var MyComponent = require('./MyComponent.jsx');
 
 if (typeof document !== 'undefined') {
-  React.render(MyComponent(), document);
+  React.render(<MyComponent />, document);
 }
 
 /* IMPORTANT!

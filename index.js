@@ -18,7 +18,7 @@ ReactToHtmlWebpackPlugin.prototype.apply = function(compiler) {
 
       var source = asset.source();
       var Component = evaluate(source);
-      var html = React.renderToString(Component());
+      var html = React.renderToString(React.createElement(Component));
       compiler.assets[this.destPath] = createAssetFromContents(html);
     } catch (err) {
       return done(err);
