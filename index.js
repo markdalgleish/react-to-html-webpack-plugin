@@ -1,25 +1,31 @@
 var React = require('react');
-var each = require('lodash.foreach');
 var evaluate = require('eval');
 
-function ReactToHtmlWebpackPlugin(files) {
-  this.files = files || {};
+function ReactToHtmlWebpackPlugin(destPath, srcPath) {
+  this.srcPath = srcPath;
+  this.destPath = destPath;
 }
 
 ReactToHtmlWebpackPlugin.prototype.apply = function(compiler) {
-  var files = this.files;
-
   compiler.plugin('emit', function(compiler, done) {
 
-    each(files, function(srcPath, destPath) {
-      var source = compiler.assets[srcPath].source();
+    try {
+      var asset = compiler.assets[this.srcPath];
+
+      if (asset === undefined) {
+        throw new Error('File not found: "' + this.srcPath + '"');
+      }
+
+      var source = asset.source();
       var Component = evaluate(source);
       var html = React.renderToString(Component());
-      compiler.assets[destPath] = createAssetFromContents(html);
-    });
+      compiler.assets[this.destPath] = createAssetFromContents(html);
+    } catch (err) {
+      return done(err);
+    }
 
     done();
-  });
+  }.bind(this));
 };
 
 var createAssetFromContents = function(contents) {

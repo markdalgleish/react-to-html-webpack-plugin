@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/markdalgleish/react-to-html-webpack-plugin",
   "dependencies": {
-    "eval": "^0.1.0",
-    "lodash.foreach": "^3.0.1"
+    "eval": "^0.1.0"
   }
 }
