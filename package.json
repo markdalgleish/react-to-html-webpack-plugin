@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/markdalgleish/react-to-html-webpack-plugin",
   "dependencies": {
-    "eval": "^0.1.0"
+    "eval": "^0.1.0",
+    "react": "^0.12.2"
   }
 }
