@@ -1,7 +1,7 @@
 {
   "name": "react-to-html-webpack-plugin",
   "version": "1.0.0",
-  "description": "WIP",
+  "description": "Webpack plugin that renders a React component to an HTML file",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
