@@ -1,6 +1,6 @@
 {
   "name": "react-to-html-webpack-plugin",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Webpack plugin that renders React components to HTML files",
   "main": "index.js",
   "scripts": {
