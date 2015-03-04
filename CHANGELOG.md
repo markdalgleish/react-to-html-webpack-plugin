@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 ### Changed
-- Nothing yet.
+- React is now listed in `peerDependencies`, ensuring version parity with the consuming project. An immediate benefit is that class-based components built with React v0.13+ now work without any issues.
 
 ## [2.0.0] - 2015-02-26
 ### Changed
