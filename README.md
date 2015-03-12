@@ -16,7 +16,7 @@ $ npm install --save-dev react-to-html-webpack-plugin
 
 ## Basic Usage
 
-This basic example assumes that the React component renders `<html>` as the root element. This works for simple cases, but if you need more fine grained control of the entire document, use the [`template`](#template) option instead.
+This basic example assumes that the React component renders `<html>` as the root element. This works for simple cases, but if you need more fine grained control of the entire document, use the [`template`](#template-function) option instead.
 
 ### webpack.config.js
 
