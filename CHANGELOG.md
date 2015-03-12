@@ -3,8 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
-### Changed
-- Nothing yet.
+### Added
+- A `template` function can now be provided to generate the rendered component's surrounding HTML.
 
 ## [2.0.1] - 2015-03-05
 ### Changed

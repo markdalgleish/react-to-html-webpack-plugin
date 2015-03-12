@@ -14,7 +14,9 @@ Components are rendered after all source files have been compiled, so JSX works 
 $ npm install --save-dev react-to-html-webpack-plugin
 ```
 
-## Usage Example
+## Basic Usage
+
+This basic example assumes that the React component renders `<html>` as the root element. This works for simple cases, but if you need more fine grained control of the entire document, use the [`template`](#template) option instead.
 
 ### webpack.config.js
 
@@ -61,6 +63,56 @@ if (typeof document !== 'undefined') {
 /* IMPORTANT!
  * You must export a component: */
 module.exports = MyComponent;
+```
+
+## API
+
+```js
+new ReactToHtmlPlugin('index.html', 'index.js', { options... });
+```
+
+### Options
+
+#### template (`function`)
+
+You can optionally provide a function that returns an HTML string.
+
+The template is called with the following data:
+
+```js
+{
+  html: '...',
+  assets: {
+    chunkName: assetPath,
+    ...
+  }
+}
+```
+
+For example:
+
+```js
+var ejs = require('ejs'); // or whatever you like ;)
+
+...
+
+new ReactToHtmlPlugin('index.html', 'index.js', {
+  template: function(data) {
+    return ejs.render(`
+      <html>
+        ...
+        <body>
+          <div id="app">
+            <%- html %>
+          </div>
+          <% for (var chunk in assets) { -%>
+          <script src="<%= assets[chunk] %>"></script>
+          <% } -%>
+        </body>
+      </html>
+    `, data);
+  }
+});
 ```
 
 ## License
