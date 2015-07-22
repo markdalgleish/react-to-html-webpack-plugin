@@ -20,7 +20,7 @@ ReactToHtmlWebpackPlugin.prototype.apply = function(compiler) {
       }
 
       var source = asset.source();
-      var Component = evaluate(source);
+      var Component = evaluate(source, /* filename: */ undefined, /* scope: */ undefined, /* includeGlobals: */ true);
       var html = React.renderToString(React.createElement(Component));
 
       var template = this.options.template;
