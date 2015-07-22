@@ -6,6 +6,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Nothing yet.
 
+## [2.2.0] - 2015-07-22
+### Added
+- Support for hashed JavaScript assets.
+- 'static' option to render static markup.
+- Standard globals are now included when evaluating source code.
+
 ## [2.1.0] - 2015-03-12
 ### Added
 - A `template` function can now be provided to generate the rendered component's surrounding HTML.
@@ -22,7 +28,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Basic support for rendering factories without props to HTML.
 
-[unreleased]: https://github.com/markdalgleish/react-to-html-webpack-plugin/compare/v2.1.0...HEAD
+[unreleased]: https://github.com/markdalgleish/react-to-html-webpack-plugin/compare/v2.2.0...HEAD
+[2.2.0]: https://github.com/markdalgleish/react-to-html-webpack-plugin/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/markdalgleish/react-to-html-webpack-plugin/compare/v2.0.1...v2.1.0
 [2.0.1]: https://github.com/markdalgleish/react-to-html-webpack-plugin/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/markdalgleish/react-to-html-webpack-plugin/compare/v1.0.0...v2.0.0
