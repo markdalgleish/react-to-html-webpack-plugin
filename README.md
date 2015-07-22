@@ -153,6 +153,10 @@ new ReactToHtmlPlugin('index.html', 'index.js', {
 });
 ```
 
+#### static (`boolean`)
+
+Optionally enable usage of [renderToStaticMarkup](https://facebook.github.io/react/docs/top-level-api.html#react.rendertostaticmarkup). This is recommended when you don't plan to run React on the client.
+
 ## License
 
 [MIT License](http://markdalgleish.mit-license.org)
