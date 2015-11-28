@@ -142,7 +142,9 @@ new ReactToHtmlPlugin('index.html', 'index.js', {
       <html>
         <head>
           ...
+          <% for (var chunk in assets) { -%>
           <link rel="stylesheet" href="<%= assets[chunk].css %>">
+          <% } -%>
         </head>
         <body>
           <div id="app">
