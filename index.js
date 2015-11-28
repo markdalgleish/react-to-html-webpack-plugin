@@ -67,23 +67,34 @@ var findAsset = function(src, compiler, webpackStatsJson) {
 // Shamelessly stolen from html-webpack-plugin - Thanks @ampedandwired :)
 var getAssetsFromCompiler = function(compiler, webpackStatsJson) {
   var assets = {};
+
   for (var chunk in webpackStatsJson.assetsByChunkName) {
     var chunkValue = webpackStatsJson.assetsByChunkName[chunk];
 
-    // Webpack outputs an array for each chunk when using sourcemaps
+    var output = {};
+
+    // Webpack outputs an array for each chunk when using sourcemaps or ExtractTextPlugin
     if (chunkValue instanceof Array) {
-      // Is the main bundle always the first element?
-      chunkValue = chunkValue[0];
+      chunkValue.forEach(function(value, index) {
+        if (value.match(/\.js$/)) {
+          output.js = withPublicPath(compiler.options.output.publicPath, value);
+        } else if (value.match(/\.css$/)) {
+          output.css = withPublicPath(compiler.options.output.publicPath, value);
+        }
+      });
+    } else {
+      output.js = withPublicPath(compiler.options.output.publicPath, chunkValue);
     }
 
-    if (compiler.options.output.publicPath) {
-      chunkValue = compiler.options.output.publicPath + chunkValue;
-    }
-    assets[chunk] = chunkValue;
+    assets[chunk] = output;
   }
 
   return assets;
 };
+
+var withPublicPath = function (publicPath, originalPath) {
+  return publicPath ? (publicPath + originalPath) : originalPath
+}
 
 var createAssetFromContents = function(contents) {
   return {
