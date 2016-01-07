@@ -22,8 +22,8 @@
     "eval": "^0.1.0"
   },
   "peerDependencies": {
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "react": ">=0.14.0",
+    "react-dom": ">=0.14.0"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
