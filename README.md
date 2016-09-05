@@ -1,3 +1,5 @@
+# DEPRECATED - Use [static-site-generator-webpack-plugin](https://github.com/markdalgleish/static-site-generator-webpack-plugin) instead.
+
 [![npm](https://img.shields.io/npm/v/react-to-html-webpack-plugin.svg?style=flat-square)](https://npmjs.org/package/react-to-html-webpack-plugin) [![Dependency Status](https://img.shields.io/david/markdalgleish/react-to-html-webpack-plugin.svg?style=flat-square)](https://david-dm.org/markdalgleish/react-to-html-webpack-plugin)
 
 # React-to-HTML Webpack Plugin
