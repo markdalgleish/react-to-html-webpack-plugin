@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/webpack-plugin-react-to-html.svg)](https://badge.fury.io/js/)
+[![npm version](https://badge.fury.io/js/polyfills-webpack-plugin.svg)](https://badge.fury.io/js/polyfills-webpack-plugin)
 
 # React-to-HTML Webpack Plugin
 
