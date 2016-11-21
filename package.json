@@ -1,6 +1,6 @@
 {
-  "name": "react-to-html-webpack-plugin",
-  "version": "2.2.0",
+  "name": "webpack-plugin-react-to-html",
+  "version": "2.2.1",
   "description": "Webpack plugin that renders React components to HTML files",
   "main": "index.js",
   "scripts": {
@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:markdalgleish/react-to-html-webpack-plugin.git"
+    "url": "git@github.com:bangwu/react-to-html-webpack-plugin.git"
   },
   "author": {
     "name": "Mark Dalgleish"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/markdalgleish/react-to-html-webpack-plugin/issues"
+    "url": "https://github.com/bangwu/react-to-html-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/markdalgleish/react-to-html-webpack-plugin",
+  "homepage": "https://github.com/bangwu/react-to-html-webpack-plugin",
   "dependencies": {
     "eval": "^0.1.0"
   },

@@ -2,9 +2,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased][unreleased]
-### Changed
-- Nothing yet.
+## [2.2.1] - 2016-11-21
+### Added
+- Let the package to support React 15
 
 ## [2.2.0] - 2015-07-22
 ### Added
@@ -28,8 +28,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Basic support for rendering factories without props to HTML.
 
-[unreleased]: https://github.com/markdalgleish/react-to-html-webpack-plugin/compare/v2.2.0...HEAD
-[2.2.0]: https://github.com/markdalgleish/react-to-html-webpack-plugin/compare/v2.1.0...v2.2.0
-[2.1.0]: https://github.com/markdalgleish/react-to-html-webpack-plugin/compare/v2.0.1...v2.1.0
-[2.0.1]: https://github.com/markdalgleish/react-to-html-webpack-plugin/compare/v2.0.0...v2.0.1
-[2.0.0]: https://github.com/markdalgleish/react-to-html-webpack-plugin/compare/v1.0.0...v2.0.0
+[2.2.1]: https://github.com/bangwu/react-to-html-webpack-plugin/compare/v2.2.0...V2.2.1
+[2.2.0]: https://github.com/bangwu/react-to-html-webpack-plugin/compare/v2.1.0...v2.2.0
+[2.1.0]: https://github.com/bangwu/react-to-html-webpack-plugin/compare/v2.0.1...v2.1.0
+[2.0.1]: https://github.com/bangwu/react-to-html-webpack-plugin/compare/v2.0.0...v2.0.1
+[2.0.0]: https://github.com/bangwu/react-to-html-webpack-plugin/compare/v1.0.0...v2.0.0
