@@ -9,4 +9,4 @@ deploy:
     secure: D+66esLlGtDv3AYF2tGsbKu+7DYxS2RTSd1qvDruPpaq093LlFYK3OaiY1BonAJgJypApFfBAje15RUJpWuMJc0Lx9bPrL4I1YmZ1ar11xzpq8xwHpZctlvfZcRnB3N4MhF2wNiKifgSvF6pfMYcjRVHxxBHxGBUSyfQBTz5sJH+z5j3XVeyP1/ycpTu7resp0ijHC8hN0JdGsY6ky3VbDES3wiYHztFkgLcWrVtha8khv91aZGT+JztWpXIeF/3j382YMMCERMKO5ogtDhonM/gPYoS1MIFzE7KPGTFuP3CX6oVbe4GyxdIzXCBCiTqYac8JAceBenYt1MhjIMzr+PrF+I7z8hfzdWiBXkQyaZDJncPO39fhczUBFJdHSXBHFXzTvK1U0G+piD3rPZf1sYdLQ2FQiih6gte7mBZpMY7jSR4elS/Ld+Hr2ZodFR3vVxMm4+/tslSSknndHyWftq/jGJyLjwgxS9t0SJVENQlCVHRihAyaOAr3m0SHh6vRW+VjBV0ebeOLN5q7LtA0ET26+iOY4EbsLBXv5KxSXoFv15v3OVtBfh7rV2UfMxnYigob4Tq8FIzMjmn1y6a63qU8aCMZaWCO2rEQNQzdNPumMXe5drfczAFX6/k/xZFeJkiZVPiYPsDf4w+M56bfj/+nMwb18Gb0UiGa/oDKI0=
   on:
     tags: true
-    repo: bangwu/webpack-plugin-react-to-html
+    repo: bangwu/react-to-html-webpack-plugin
