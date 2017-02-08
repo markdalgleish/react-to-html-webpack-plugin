@@ -123,8 +123,10 @@ The template is called with the following data:
 {
   html: '...',
   assets: {
-    chunkName: assetPath,
-    ...
+    chunkName: {
+      js: jsAssetPath,
+      css: cssAssetPath // if you used ExtractTextPlugin to extract a CSS file as well
+    }
   }
 }
 ```
@@ -140,13 +142,18 @@ new ReactToHtmlPlugin('index.html', 'index.js', {
   template: function(data) {
     return ejs.render(`
       <html>
-        ...
+        <head>
+          ...
+          <% for (var chunk in assets) { -%>
+          <link rel="stylesheet" href="<%= assets[chunk].css %>">
+          <% } -%>
+        </head>
         <body>
           <div id="app">
             <%- html %>
           </div>
           <% for (var chunk in assets) { -%>
-          <script src="<%= assets[chunk] %>"></script>
+          <script src="<%= assets[chunk].js %>"></script>
           <% } -%>
         </body>
       </html>
